@@ -241,6 +241,12 @@ padding: 20px;
     padding: 4px;
 }
 
+@media all and (max-width: 1200px) {
+    .photoplat {
+        width: 330px;
+    } 
+}
+
 @media all and ( max-width: 1024px) {
      .bg {
         width: 100%;
