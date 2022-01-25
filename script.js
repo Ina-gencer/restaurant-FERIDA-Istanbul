@@ -25,6 +25,7 @@
           }
         }
 
+
     let newColor = ["#000000"]
     gsap.from(".tbhead", {opacity:0, duration: 8, delay:0.5, color: newColor})
     gsap.from(".cuisine", { opacity:0, duration: 10, delay:3})
