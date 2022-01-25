@@ -1,184 +1,529 @@
-/******************************************************************************
-START Glitch hello-app default styles
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #F7A440;
+    }
+.bg {
+    background-image: url('https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/2.jpg?v=1643144342132');
+    height: 100%; 
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
-:root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #000000;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+}
+.topnav #myLinks {
+    display: none;
+}
+.topnav a.icon {
+    background:#FF7600;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f2f2f2;
+    text-align: center;
+    object-position: center ;
+    padding: 23px 23px;
+    text-decoration: none;
+    font-size: 20px;
+    align-self: baseline;
+}
+.topnav a:hover {
+    color: #FF7600;
+}
+.topnav a:focus {
+    color: #fff;
+}
+.item {
+    color: #f2f2f2;
+    text-align: center;
+    object-position: center ;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    align-self: baseline;
+}
+.start {
+    margin-right: auto;
+    font-size: 25px;
+} 
+ .btncontact {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 60px;
+}
+.btncontact:hover {
+    background-color: #FF7600;
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+.head {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
+.tbhead {
+    font-size: 60px;
+    color: #e9e9e9;
+    text-align: start;
+    margin-left: 100px ;
+    margin-top: 100px;
 }
-.btn--remix img {
-  margin-right: 0.5rem;
+.cuisine {
+    font-size: 22px;
+    text-align: start;
+    color: #AAAAAA;
+    margin-left: 100px;
 }
-.btn--remix:hover {
-  background-color: #D0FFF1;
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
+.address {
+text-align: center;
+font-size: 20px;
+color: #414040;
+flex: 1;
+padding: 20px;
+}
+.telephone {
+    text-align: center;
+    border-left: 2px solid #e7e6e1;
+    border-right: 2px solid #e7e6e1;
+    flex: 1;
+    padding: 20px;
+}
+.tel {
+    font-size: 25px;
+    text-decoration: none;
+    color: #232323;
+    flex: 1;
+}
+.about {
+    font-size: 25px;
+    color: #232323;
 
-/* Navigation grid */
+}
+.menu {
+    display:flex;
+    justify-content: center;
+}
+ .show {
+    width: 80%;
+    margin: 40px 0px;
+}  
+.our-menu {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #151515;
+}
+.ligne {
+    margin-right: 47%;
+    margin-left : 47%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: #151515 1px solid;
+    text-align: center;
+}
+.deskription {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #151515;
+}
+.note {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #414040;
+}
+.blok {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    }
+
+.photoplat {
+    width: 400px;
+}
+.show {
+    width: 240px;
+    margin: 10px 0px;
+}
+.plat {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;    
+}
+.ingredients {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    color: #414040;
+}
+.chef {
+    background-color: #f0f3f3;
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+.chefName {
+    width: 300px;
+    border-radius: 50%;
+}
+.gris {
+    background-color:  #151515;;
+    padding: 30px 0px;
+    text-align: center;
+}
+.emporter {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    color: #fff;
+}
+.emporter1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 20px;
+}
+.web, .followUs {
+    color: #FF7600;
+}
 .footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
+    color: #414040;
+}
+.fb {
+    margin: 5px;
+}
+.darkgris {
+    background-color: #0f0f0f;
+    padding: 30px;
+    text-align: center;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
+.call {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color:#e7e6e1;    
 }
-.footer a:hover {
-  background: var(--color-primary);
+.blackline {
+    background-color: #000000;
+    padding: 4px;
 }
 
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
+@media all and ( max-width: 1024px) {
+     .bg {
+        width: 100%;
+        height: auto; 
+        } 
+    .photoplat {
+        width: 300px;
+    }   
+    .img {
+        width: 60px;
+        height: 60px;
+    }
+    .container {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+@media all and ( max-width: 980px) {
+    .photoplat {
+        width: 270px;
+    }
 }
 
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
+@media all and (max-width: 800px) {
+    .body {
+        background-attachment: fixed;
+        background-size: 20%;
+    }
+    .topnav {
+        width: 100%;
+        opacity: 1;
+        background-color: #000000;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+    .topnav a.icon {
+        background-color: #000000
+    }
+    .topnav a {
+        color: #fff;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    .btncontact {
+        margin-right: 0px;
+    }
+    .topnav a:hover, .topnav a:focus {
+        color: #f1f1f1;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+    #main {
+        transition: margin-top 0.5s;
+        padding: 16px;
+    }
+    .item {
+        align-self: center;
+    }
+    .start {
+        margin-right: 0;
+    }
+   
+    .tbhead {
+        font-size: 45px;
+    }
+  
+    .cuisine {
+        font-size: 20px;
+    }
 
-body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+    .container {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .address {
+    font-size: 20px;
+    }
+
+    .tel {
+        font-size: 20px;
+    }
+    .about {
+        font-size: 20px;
+    }
+
+    /*  */
+    .telephone {
+        border-top: 1px solid #AAAAAA;
+        border-bottom: 1px solid #AAAAAA;
+        border-left: none;
+        border-right: none;
+    }
+    .price {
+        width: 700px;
+        height: auto;
+    }
+    .photoplat {
+        width: 100%;
+        margin-top: 7%;
+    }
+    .plat {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .ingredients {
+        text-align: center;
+        margin-top: 0;
+    }
+    .chefName {
+        width: 250px;
+    }
+    .deskription {
+    padding: 5px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    .emporter, .emporter1 {
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 600px) {
+    .price {
+        width: 500px;
+    }
 }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
-
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
-
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
-
-/* Subheading */
-h2 {
-  color: #2800FF;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
+@media all and (max-width: 500px) {
+    .body {
+        background-attachment: fixed;
+        background-size: 20%;
+    }
+    .topnav {
+        opacity: 1;
+        overflow-y: hidden;
+        transition: 0.5s;
+        flex-direction: column;
+    }
+    .topnav a.icon {
+        background-color: #000000
+    }
+    .topnav a {
+        color: #fff;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    .btncontact {
+        margin-right: 0px;
+    }
+    .topnav a:hover, .topnav a:focus {
+        color: #f1f1f1;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+    #main {
+        transition: margin-top 0.5s;
+        padding: 16px;
+    }
+    .item {
+        align-self: center;
+    }
+    .start {
+        margin-right: 0;
+    }
+  
+    .tbhead {
+        font-size: 50px;
+        margin: 0;
+    }
+    .cuisine {
+        font-size: 20px;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .telephone {
+        border-top: 1px solid #AAAAAA;
+        border-bottom: 1px solid #AAAAAA;
+        border-left: none;
+        border-right: none;
+    }
+    .photoplat {
+        width: 100%;
+        margin-top: 7%;
+    }
+    .plat {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .ingredients {
+        text-align: center;
+        margin-top: 0;
+    }
+    .hau {
+        width: 250px;
+    }
+    .deskription {
+    padding: 5px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+      
+    }
+    @media all and (max-width: 414px) {
+        .tbhead {
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        .head {
+            margin-top: 50px;
+        }
+        .cuisine {
+            margin-left: 50px;
+            font-size: 18px;
+        }
+        .price {
+            width: 350px;
+        }
+        .emporter, .emporter1, .followUs {
+            font-size: 14px;
+        }
+        .footer {
+            font-size: 10px;
+        }
+        .img {
+            width: 40px;
+            height: 40px;
+        }
+        .about {
+            font-size: 18px;
+        }
+    }
+    @media all and (max-width: 375px)  {
+        .price {
+            width: 300px;
+        }
+        .deskription {
+            font-size: 16px;
+        }
+    }
+    @media all and (max-width: 360px) {
+        .price {
+            width: 260px;
+        }
+        .tbhead {
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        .cuisine {
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        .our-menu {
+            font-size: 23px;
+        }
+        .deskription {
+            font-size: 15px;
+        }
+        .note {
+            font-size: 18px;
+        }
+        .show {
+            width: 200px;
+        }
+        .plat {
+            font-size: 20px;
+        }
+    }

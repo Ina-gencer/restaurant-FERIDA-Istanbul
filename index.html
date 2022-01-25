@@ -1,101 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <title>Hello World!</title>
-
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-    <meta
-      name="description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-    <meta
-      property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
-    />
-    <meta name="twitter:card" content="summary" />
-
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
-
-    <!-- The wrapper and content divs set margins and positioning -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <!-- This is the start of content for our page -->
-        <h1 class="title">Hello World!</h1>
-
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <!-- Instructions on using this project -->
-        <div class="instructions">
-          <h2>
-            Using this project
-          </h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out README.md in the editor for
-            more info and next steps you can take!
-          </p>
-          <!-- ADD BUTTON HERE -->
-          
-          <!-- Once you've added the button from the readme, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferida Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <a id="home"></a>
+    <div class="bg">
+        <div class="head">
+            <h1 class="tbhead">Murat Bozok'un imza <br>
+             yemekleri Ferida<br>
+              İstanbul'da.</h1>
+            <p class="cuisine">Yeni nesil Boşnak mutfağının yepyeni<br>
+                 lezzetleriyle buluşma noktanız.</p>
         </div>
-      </div>
     </div>
-    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+    <nav  id="myNav" class="topnav">
+        <a class="item start" href="#home" onclick="myFunctionMobile()">FERIDA</a>
+        <div id="myLinks">
+        <a class="item" href="#menu" onclick="myFunctionMobile()">Menü</a>
+         <a class="item" href="#specialite" onclick="myFunctionMobile()">Spesiyalitelerimiz</a>
+        <a class="item" href="#restaurant" onclick="myFunctionMobile()">Restoran</a>
+        <a class="item active" href="#contact" onclick="myFunctionMobile()"><button class="btncontact">İletişim</button></a>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    
+
+<div class="container">
+    <div class="address">
+        <img class="img" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/locat%C4%B1on.png?v=1643144435481" alt="address" width="70" height="70">
+        <p class="about">Kennedy Cad., No:52V, Zeytinburnu, İstanbul, Türkiye</p>
+           
+    </div>
+    <div class="telephone" >
+        <img class="img" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/mobile.png?v=1643144479179" alt="telephone" width="70" height="70">
+        <p><a class="tel" href="tel:+90 537 320 34 00">
+            +90 537 320 34 00</a></p>
+    </div>
+    <div class="address">
+        <img class="img" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/oclock.png?v=1643144523651" alt="" width="70" height="70">
+        <p class="about"> Her gün : <br>
+            09:00–00:00
+        </p>
+    </div>
+</div>
+
+<h2 class="our-menu">Menü</h2>
+<hr class="ligne">
+
+<a id="menu"></a> 
+
+ <p class="deskription">Menü taze ürünlerden yapılmıştır. <br>
+Yemekler yerinde ve dakika dakika pişirilir. </p> 
+ <div class="menu">
+        <img class="price" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/menu1.jpg?v=1643144571096" alt="" width="900px">
+</div> 
+
+
+
+ <a id="specialite"></a>
+<h2 class="our-menu">Bizim spesiyalitelerimiz </h2>
+<hr class="ligne">
+<p class="note">Ferida, Brasserie kavramında yeni bir vizyon öncüsü olacak</p>
+
+<div class="blok">
+
+    <div class="show">
+        <img class="photoplat" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/food2.jpg?v=1643144631283" alt="" id="platOne">
+        <h3 class="plat"> Tavuk Schnitzel</h3>
+        <p class="ingredients">patates, tavuk Schnitzel, soğan, limon, <br>
+            kırmızı lahana, yoğurtlu sos</p>
+      
+    </div>
+    <div class="show">
+        <img class="photoplat" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/food11.jpg?v=1643144674054" alt="" id="platTwo">
+        <h3 class="plat"> Coleslaw salatası </h3>
+        <p class="ingredients">patates, mevsim sebzeler </p>
+    
+    </div>
+    <div class="show">
+        <img class="photoplat" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/food3.jpg?v=1643144716966" alt="" id="platThree">
+        <h3 class="plat"> Ajvar Dip:</h3>
+        <p class="ingredients">Mozarella ve Boşnak kuru etli güveçte ajvar,<br> nachos cipsi ile</p>
+     
+    </div>
+</div>
+<a id="restaurant"></a>
+<div class="chef">
+    <img class="chefName" src="https://cdn.glitch.global/27fb5c92-8bf8-4c3b-b759-410e12932dd6/Chef-Murat_Bozok.jpg?v=1643144765986" alt="chef">
+    <p class="note">Şef MURAT BOZOK </p>
+    <p class="deskription">“El yapımı malzemelerden ortaya çıkan imza tabaklar, mutluluk hissi yaratan ambiyans ve dünya mutfağının yanında menü için özel olarak seçilen Balkan tatları.” <br>
+        Sizi görmekten her zaman mutluyuz!</p>
+</div>
+<br>
+<hr class="ligne">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.9280332453836!2d28.90290771545692!3d40.983056679303346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb78be012efd%3A0xd2ecac1dfaa18f39!2zS2F6bMSxw6dlxZ9tZSwgS2VubmVkeSBDZC4gTm86NTIsIDM0MDIwIFpleXRpbmJ1cm51L8Swc3RhbmJ1bA!5e0!3m2!1sru!2str!4v1642973215991!5m2!1sru!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<a id="contact"></a>
+<div class="gris">
+    <h3 class="emporter"><a class="web" href="www.ferida.com.tr">  www.ferida.com.tr</a></h3>
+    <p class="emporter">Rezervasyon:  <a class="call" href="tel: +90 (537) 320 34 00"> +90 (537) 320 34 00,</a> <br>
+
+    <p class="emporter"> <a class="call" href="tel:+90 537 320 34 00">+90 537 320 34 00</a> <br>
+        <p class="emporter">Kennedy Cad., No:52V, Zeytinburnu, İstanbul, Türkiye</p>
+
+  
+    <div class="face-insta">
+        <p class="followUs">Takipte Kalın</p>
+    <a class="fb" href="https://www.instagram.com/feridaistanbul/" target="_blank"> <img src="insta.png" alt="instagram" width="40px" height="40px"></a>
+    </div>
+</div>
+
+<div class="darkgris">
+    <p class="footer" > Bu web sitesi eğitim amaçlı yapılmıştır. <br>Tüm bilgiler internetten alınmıştır </p>
+</div>
+<div class="blackline"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
