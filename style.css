@@ -172,7 +172,7 @@ padding: 20px;
     }
 
 .photoplat {
-    width: 400px;
+    width: 300px;
 }
 .show {
     width: 240px;
@@ -241,20 +241,14 @@ padding: 20px;
     padding: 4px;
 }
 
-@media all and (max-width: 1200px) {
-    .photoplat {
-        width: 330px;
-    } 
-}
+
 
 @media all and ( max-width: 1024px) {
      .bg {
         width: 100%;
         height: auto; 
         } 
-    .photoplat {
-        width: 300px;
-    }   
+    
     .img {
         width: 60px;
         height: 60px;
@@ -341,7 +335,6 @@ padding: 20px;
         font-size: 20px;
     }
 
-    /*  */
     .telephone {
         border-top: 1px solid #AAAAAA;
         border-bottom: 1px solid #AAAAAA;
